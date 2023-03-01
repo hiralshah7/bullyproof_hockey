@@ -20,30 +20,36 @@
 }
 
 .logo {
-    width: 90%;
-    margin: 0;
+    width: 60%;
+    margin: 15px;
 
 }
 
 .navbar {
-   display: grid;
+    position: fixed;
+    display: grid;
     align-items: center;
-    padding: 1.3rem 1rem;
+    height: 80px;
+    text-align: center;
+    align-content: center;
     background-color: var(--color-primary);
     color: var(--color-neutral-2);
     font-family: var(--font-primary);
     font-size: var(--font-size);
+    width: 100%;
 }   
 
 
+
+
 .navbar-link {
-    font-size: 12px;
+    font-size: 19px;
     font-weight: 200;
     line-height: 18px;
     text-align: center;
     color: #ffff;
     font-family: Helvetica, sans-serif;
-   text-transform: uppercase;
+    text-transform: uppercase;
     padding: 0 0.3rem;
     text-decoration: none;
 
@@ -112,6 +118,105 @@
     }
 
     .navbar-list {
-        display: grid;
+       display: flex;
+       justify-content: flex-end;
     }
 
+    .navbar-toggle-icon {
+
+        // hiding it when the screen is bigger than 768px
+        display: none;
+
+    }
+
+
+
+    @media (max-width: 768px) {
+        .navbar-list {
+          display: none;
+          position: absolute;
+          top: 50px;
+          left: 0;
+          width: 100%;
+          background: var(--color-primary); 
+          box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+          z-index: 1;
+        }
+        
+        .navbar-list.active {
+          display: grid;
+          // to cover the full screen of mobile, we need to add the height
+            // height: 100vh;
+            margin-top: 20px;
+            // to cover the width of the screen
+            // width: 100vw;
+            align-items: center;
+            grid-gap: 20px;
+            justify-content: center;
+        }
+       
+
+        .navbar-toggle {
+          display: block;
+          position: absolute;
+          top: 20px;
+          right: 20px;
+          cursor: pointer;
+          z-index: 2;
+        }
+
+        .navbar_align{
+            // making it vertical overriding the horziontal grid
+            font-size: 30px;
+            grid-template-rows: repeat(1,1fr);
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .navbar-toggle-icon {
+          display: block;
+          width: 30px;
+          height: 20px;
+          position: relative;
+          transform: rotate(0deg);
+          transition: .5s ease-in-out;
+          margin: 15px;
+          margin-right: 10px;
+        }
+        
+        .navbar-toggle-icon-bar {
+          display: block;
+          position: absolute;
+          height: 3px;
+          width: 100%;
+          background: #333;
+          opacity: 1;
+          transform: rotate(0deg);
+          transition: .25 ease-in-out;
+        }
+
+        .btn1, .btn2 {
+            display: none;
+        }
+        
+
+
+/* Animate the toggle button when it's clicked */
+  .navbar-toggle.active .navbar-toggle-icon-bar:nth-child(1) {
+    transform: rotate(45deg);
+    top: 0;
+    left: 0;
+  }
+
+  .navbar-toggle.active .navbar-toggle-icon-bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .navbar-toggle.active .navbar-toggle-icon-bar:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 0;
+    right: 0;
+  }
+}
+    
