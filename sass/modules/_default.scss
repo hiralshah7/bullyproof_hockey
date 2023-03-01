@@ -69,4 +69,28 @@ line-height: 30px;
 }
 
 
+// page box model
+
+body {
+
+    // border box
+    box-sizing: border-box;
+    // font size
+    font-family: var(--font-primary);
+    background-color: #ffff;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "header" "main" "footer";
+    grid-gap: 1rem;
+    padding: 1rem;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    
+
+
+}
+
 

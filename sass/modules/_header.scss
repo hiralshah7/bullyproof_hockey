@@ -1,0 +1,143 @@
+// styling header element
+// for mobile first approach
+
+//establishing roots for the header
+
+--root {
+    --color-primary: #E94B5C;
+    --color-secondary: #279AF1;
+    --color-neutral-1: #60656F;
+    --color-neutral-2: #000000;
+
+    //fonts
+    --font-primary: 'Heavitas';
+    --font-secondary: 'Helvetica';
+    --font-size: 16px;
+    --font-size-2: 18px;
+    --font-size-3: 36px;
+    
+}
+
+.hidden {
+    display: none;
+}
+
+// .logomain {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     position: absolute;
+//     flex-direction : row;
+//     margin-top: 0.5%;
+//     text-align: center;
+//     margin-left: 4%;
+// }
+
+.logo {
+    width: 90%;
+    margin: 0;
+
+}
+
+.navbar {
+   display: grid;
+    align-items: center;
+    padding: 1.3rem 1rem;
+    background-color: var(--color-primary);
+    color: var(--color-neutral-2);
+    font-family: var(--font-primary);
+    font-size: var(--font-size);
+}   
+
+// .navbar-list {
+//     display: flex;
+//     justify-content:center;
+//     list-style: none;
+//     align-items: flex-end;
+//     margin: 0;
+//     margin-right: 6%;
+
+    
+
+// }
+
+.navbar-link {
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 18px;
+    text-align: center;
+    color: #ffff;
+    font-family: Helvetica, sans-serif;
+   text-transform: uppercase;
+    padding: 0 0.3rem;
+    text-decoration: none;
+
+
+}
+
+.navbar-link:hover {
+    color: var(--color-neutral-1);
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.btn1 {
+    padding: 05px 32px;
+    text-align: center;
+    border: 1px solid #FFFFFF;
+    border-radius: 30px;
+    background-color: var(--color-primary);
+    font-weight: 700;
+    color: #FFFFFF;
+    cursor: pointer;
+    
+}
+
+.btn1:hover {
+    background-color: var(--color-neutral-2);
+    color: #ffff;
+    transition: 0.5s;
+
+}
+
+.btn2 { 
+    border: 1px solid #FFFFFF;
+    border-radius: 30px;
+    font-weight: 500;
+    padding: 05px 04px;
+    width: 120px;
+    text-transform: uppercase;
+    margin-right: 20px;
+    cursor: pointer;
+
+}
+
+.btn2:hover {
+    // make it a good hover effect
+    background-color: var(--color-neutral-2);
+    color: #ffff;
+    transition: 0.5s;
+
+}
+
+.navbar_align {
+    display: grid;
+    grid-template-columns: repeat(8,0fr);
+    text-align: center;
+    justify-content: end;
+    align-items: center;
+
+    }
+
+    .navbar_align2 {
+        position: absolute;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        
+
+    }
+
+    .navbar-list {
+        display: grid;
+    }
+

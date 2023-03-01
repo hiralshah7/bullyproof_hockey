@@ -15,27 +15,42 @@
     <h1 class="hidden">Hidden</h1>
         
     <!-- nav menu -->
-        <nav class="navbar" data-navbar>
-            
-            <!-- logo -->
-            <a href="index.html" class="navbar-logo">
-                <img src="images/logo.svg" alt="logo" class="logo">
+     <!-- logo -->
 
-            <ul class="navbar-list">
-                <li><a href="#facts" class="navbar-link" data-nav-link>Facts</a></li>
-                <li><a href="#About" class="navbar-link" data-nav-link>About</a></li>
+    
 
-                <li><a href="#Testimonials" class="navbar-link" data-nav-link>Testimonials</a></li>
-                <li><a href="#Events" class="navbar-link" data-nav-link>Events</a></li>
-                <li><a href="#Contact" class="navbar-link" data-nav-link>Contact</a></li>
-                <li><a href="#Donate" class="navbar-link" data-nav-link><button class="btn">Donate</button></a></li>
-                <li><a href="tel:1-800-273-8255" class="navbar-link" data-nav-link><button class="btn">Help Phone</button></a></li>
-            </ul>
-
-            <!-- for hamburger menu -->
-            <div class="navbar-toggle" data-navbar-toggle>
-                <span class="navbar-toggle-icon"></span>
+        <nav class="navbar">
+            <div class="navbar_align2">
+                <div class="logomain">
+                    <a href="index.html" class="navbar-logo">
+                        <img src="images/logo.svg" alt="logo" class="logo">
+                    </a>
+                </div>
             </div>
+            <ul class="navbar-list">
+               
+                <div class="navbar_align" data-navbar>    
+                    <li><a href="#facts" class="navbar-link" data-nav-link>Facts</a></li>
+                    <li><a href="#About" class="navbar-link" data-nav-link>About</a></li>
+
+                    <li><a href="#Testimonials" class="navbar-link" data-nav-link>Testimonials</a></li>
+                    <li><a href="#Events" class="navbar-link" data-nav-link>Events</a></li>
+                    <li><a href="#Contact" class="navbar-link" data-nav-link>Contact</a></li>
+                    <li><a href="#Donate" class="navbar-link" data-nav-link><button class="btn1">Donate</button></a></li>
+                    <li><a href="tel:1-800-273-8255" class="navbar-link" data-nav-link><button class="btn2">Help Phone</button></a></li>
+                 </div>
+            </ul>
+         
+            <!-- for mobile view -->
+            <div class="navbar-toggle" data-navbar-toggle>
+                <span class="navbar-toggle-icon">
+                    <span class="navbar-toggle-icon-bar">|</span>
+                    <span class="navbar-toggle-icon-bar">|</span>
+                    <span class="navbar-toggle-icon-bar">|</span>
+                </span>
+            </div>
+
+
         </nav>
     <!-- end of header -->
 
@@ -297,9 +312,6 @@
 
 <!-- js -->
 <script src="js/main.js" type="defer"></script>
-
-
-
 <!-- ion icon -->
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">
 </script>
