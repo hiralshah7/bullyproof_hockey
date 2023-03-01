@@ -1,7 +1,4 @@
-// styling header element
-// for mobile first approach
 
-//establishing roots for the header
 
 --root {
     --color-primary: #E94B5C;
@@ -22,17 +19,6 @@
     display: none;
 }
 
-// .logomain {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     position: absolute;
-//     flex-direction : row;
-//     margin-top: 0.5%;
-//     text-align: center;
-//     margin-left: 4%;
-// }
-
 .logo {
     width: 90%;
     margin: 0;
@@ -49,17 +35,6 @@
     font-size: var(--font-size);
 }   
 
-// .navbar-list {
-//     display: flex;
-//     justify-content:center;
-//     list-style: none;
-//     align-items: flex-end;
-//     margin: 0;
-//     margin-right: 6%;
-
-    
-
-// }
 
 .navbar-link {
     font-size: 12px;
@@ -113,7 +88,6 @@
 }
 
 .btn2:hover {
-    // make it a good hover effect
     background-color: var(--color-neutral-2);
     color: #ffff;
     transition: 0.5s;
