@@ -1,5 +1,20 @@
 // import fonts
 @import url('https://fonts.cdnfonts.com/css/heavitas');
+
+--root {
+    --color-primary: #E94B5C;
+    --color-secondary: #279AF1;
+    --color-neutral-1: #60656F;
+    --color-neutral-2: #000000;
+
+    //fonts
+    --font-primary: 'Heavitas';
+    --font-secondary: 'Helvetica';
+    --font-size: 16px;
+    --font-size-2: 18px;
+    --font-size-3: 36px;
+    
+}
                 
 
 // for mobile first approach
@@ -49,12 +64,44 @@ body {
     line-height: 20px;
     font-weight: 400;
     width: 80%;
-    margin: 0 auto;
-    
-
-    
+    margin: 0 auto;    
 }
 
+
+.btn_learnmore {
+
+    background-color:  var(--color-primary);
+    padding: 10px;
+    border-radius: 30px;
+    padding: 20px;
+    width: 100px;
+    color: #fff;
+    font-size: 15px;
+    box-shadow: 0px 2px 2px 0px #00000040;
+    font-family:  Helvetica, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 0;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.scroll-down-link {
+    text-align: center;
+    color: #fff;
+    font-size: 35px;
+}
+
+
+.textMain {
+    text-align : center;
+}
 // for desktop approach adding media query for desktop
 @media (min-width: 768px) {
     .heroImg {
@@ -66,8 +113,54 @@ body {
         background-size: cover;
         background-attachment: fixed;
         flex-direction: column;
-        background-position-y:78px;   
-    }
+        background-position-y:78px;
+        justify-content: flex-end;
+        align-items: flex-start;
+        padding-left:20px;
+        padding-bottom: 20px;
+        }  
+
+        .pp {
+            width: 100%;
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 10px;
+            text-align: left; 
+            word-break: break-word;
+            
+
+        }
+
+        .heading1 {
+            text-align: left;
+            font-size: 40px;
+
+        }
+
+        .textMain {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            width: 25%;
+            margin: 0 auto;
+            margin-left: 80px;
+            margin-bottom: 10px;
+
+        }
+
+        .btn_learnmore {
+
+            background-color:  var(--color-primary);
+            width: 100px;
+            font-size: 15px;
+            text-align: center;
+            text-decoration: none;
+            margin-left: 0;
+
+            
+
+        }
+    
 
 
 
