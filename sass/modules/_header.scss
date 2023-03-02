@@ -43,13 +43,11 @@
 
 
 .navbar-link {
-    font-size: 19px;
-    font-weight: 200;
+    font-size: 15px;
     line-height: 18px;
     text-align: center;
     color: #ffff;
     font-family: Helvetica, sans-serif;
-    text-transform: uppercase;
     padding: 0 0.3rem;
     text-decoration: none;
 
@@ -75,26 +73,28 @@
 }
 
 .btn1:hover {
-    background-color: var(--color-neutral-2);
-    color: #ffff;
+    color: var(--color-primary);
+    background-color: #ffff;
     transition: 0.5s;
+
 
 }
 
 .btn2 { 
     border: 1px solid #FFFFFF;
     border-radius: 30px;
-    font-weight: 500;
+    font-weight: 600;
     padding: 05px 04px;
     width: 120px;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     margin-right: 20px;
     cursor: pointer;
+    color: var(--color-primary);
 
 }
 
 .btn2:hover {
-    background-color: var(--color-neutral-2);
+    background-color: var(--color-primary);
     color: #ffff;
     transition: 0.5s;
 
@@ -103,6 +103,7 @@
 .navbar_align {
     display: grid;
     grid-template-columns: repeat(8,0fr);
+    grid-gap: 04px;
     text-align: center;
     justify-content: end;
     align-items: center;
@@ -145,11 +146,7 @@
         
         .navbar-list.active {
           display: grid;
-          // to cover the full screen of mobile, we need to add the height
-            // height: 100vh;
             margin-top: 20px;
-            // to cover the width of the screen
-            // width: 100vw;
             align-items: center;
             grid-gap: 20px;
             justify-content: center;
@@ -162,7 +159,10 @@
           top: 20px;
           right: 20px;
           cursor: pointer;
-          z-index: 2;
+          border: none;
+          background-color: transparent;
+          color: black;
+
         }
 
         .navbar_align{
@@ -180,8 +180,8 @@
           height: 20px;
           position: relative;
           transform: rotate(0deg);
-          transition: .5s ease-in-out;
-          margin: 15px;
+          transition: .15s ease-in-out;
+          margin: 9px;
           margin-right: 10px;
         }
         
@@ -196,6 +196,24 @@
           transition: .25 ease-in-out;
         }
 
+        .navbar-toggle-icon-bar {
+          display: block;
+          position: absolute;
+          height: 1;
+          width: 100%;
+          background: #ffffff;
+          opacity: 1;
+          transform: rotate(0deg);
+          transition: .35 ease-in-out;
+        }
+
+        .navbar-toggle-icon-bar:last-child {
+            margin-top: 10px; 
+        }
+
+        .navbar-toggle-icon-bar:nth-child(2) {
+            margin-top: 20px; 
+            }
         .btn1, .btn2 {
             display: none;
         }
@@ -207,6 +225,7 @@
     transform: rotate(45deg);
     top: 0;
     left: 0;
+    transition: .35s ease-in-out;
   }
 
   .navbar-toggle.active .navbar-toggle-icon-bar:nth-child(2) {
@@ -217,6 +236,11 @@
     transform: rotate(-45deg);
     top: 0;
     right: 0;
-  }
+    margin-top: 0px;
+
+    //adding more transition to make it smoother
+    transition: .35s ease-in-out;
+
+}
 }
     
