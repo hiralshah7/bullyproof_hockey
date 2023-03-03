@@ -11,3 +11,4 @@ navbarToggle.addEventListener('click', () => {
   });
 
 
+// creating a vue instance for event section so that it can be updated dynamically
