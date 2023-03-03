@@ -9,7 +9,5 @@ navbarToggle.addEventListener('click', () => {
   navbarToggle.classList.toggle('active');
 });
   });
-  
-
 
 
