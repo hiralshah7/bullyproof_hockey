@@ -33,7 +33,7 @@
 
 
 .box1 {
-    height: 658px;
+    height: 508px;
     background-color: #fff;
     border-radius: 32px;
     border: 1.5px solid #E94B5C;
@@ -46,6 +46,9 @@
     overflow: scroll;
     scrollbar-width: none;
     -ms-overflow-style: none;
+    box-shadow: 0px 2px 2px 0px #00000040;
+
+
     &::-webkit-scrollbar {
         display: none;
     }
@@ -83,12 +86,85 @@
     line-height: 24px;
 }
 
+.heading11 {
+    font-family: var(--font-primary);
+    color: var(--color-secondary);
+    text-align: left;
+    font-weight: 500;
+    font-size: 25px;
+
+}
+
+.lower{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
 .left {
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 
+.btn_learnmore1 {
+    background-color:  var(--color-primary);
+    border-radius: 30px;
+    width: 300px;
+    padding: 20px;
+    color: #fff;
+    font-size: 15px;
+    box-shadow: 0px 2px 2px 0px #00000040;
+    font-family:  Helvetica, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 
+}
+
+.lower {
+    display:  flex;
+    flex-direction: column;
+  align-items: center;
+
+}
+
+
+#events {
+    display:  flex;
+    width: 100%;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn11 {
+
+    background-color:  var(--color-secondary);
+    border-radius: 30px;
+    width: 300px;
+    padding: 20px;
+    color: #fff;
+    font-size: 15px;
+    box-shadow: 0px 2px 2px 0px #00000040;
+    font-family:  Helvetica, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+
+
+
+
+}
 
 
 
@@ -104,35 +180,18 @@
     .container_event {
         grid-template-columns: repeat(3,1fr);
         width: 90%;
+        height: 100vh;
+        margin-bottom: 40px;
         grid-gap: 20px;
         display: grid;
     }
-   
-    #events {
-       display: flex;
-        align-items: center;
-        flex-direction: column;
-        // remove the exrtra height
-        height: 910px;
-    }
-
-    .event_img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 32px;
-        margin-bottom: 20px;
-
-
-    }
-
-
     
 
    .box1 {
     height: auto;
-    min-height: 800px;
+    min-height: 750px;
    }
+
 
 
 
