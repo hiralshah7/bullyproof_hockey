@@ -20,8 +20,14 @@
 }
 
 .logo {
-    width: 60%;
-    margin: 15px;
+  width: 100px;
+  
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.2);
+            transition: 0.8s;
+        }
 
 }
 
@@ -132,7 +138,7 @@
 
 
 
-    @media (max-width: 768px) {
+    @media (max-width: 768px)  {
         .navbar-list {
           display: none;
           position: absolute;
@@ -238,6 +244,10 @@
  
     transition: .35s ease-in-out;
 
+}
+
+.logo {
+    width: 65px;
 }
 }
     
