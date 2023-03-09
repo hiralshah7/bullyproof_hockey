@@ -216,20 +216,114 @@ color: #E94B5C;
     margin-top: 100px;
     margin-right: 100px;
 }
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
+ 
+
+// for tablet, ipad and other devices
+
+@media (min-width: 768px) and (max-width: 1494px) { 
+    
+
+    #contact_sectionx   {
+        width: 104%;
+        background-image: url(../images/desktop_jpg/background_contact_us.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: grid;
+        height: 30vh;
+        display: flex;
+        justify-content: flex-end;
+        position: sticky;
+}
+
+.contact_section {
+    width:40%;
+    margin-right: 62px !important;
+}
+
+// testimonial page
+
+.testimonial_event {
+
+    height: 50vh;
+
+}
+
+.box11 {
+    min-height: 510px;
+}
+
+.headingx1 {
+    font-size: 36px;
+}
+.container_event {
+  
+    display: flex;
+    height: 170vh;
+    flex-direction: column;
+    width: 45%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+}
+
+.container {
+
+    display: flex;
+    font-size: 34px;
+    flex-direction: column;
+
+}
+
+
+.container p {
+    font-size: 34px;
+}
+
+
+// buttons 
+
+ .btn{
+ 
+    font-size: 32px;
+    height: 30px;
+
+ }
+
+ .btn4 {
+    font-size: 32px;
+    height: 30px;
+ }
+
+ .headingx {
+    font-size: 36px;
+ }
+
+ .heroImg {
+    // smaller the image
+    background-size: UNSET;
+    height: 40vh;
+    background-position-y: 80px; 
+
+ }
+ 
+ .navbar {
+    width: 103%;
+    // disable x scroll
+    overflow-x: hidden;
+   
+
+ }
+
+ // to restrict the width of the  body 
+    body {
+        width: 100%;
+       
+    }
+    
+}
+
+
+
