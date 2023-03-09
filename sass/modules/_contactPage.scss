@@ -9,6 +9,14 @@
     padding: 20px;
     margin: 20px;
     border-radius: 30px;
+    
+
+
+    &:hover {
+        transform: scale(1.1);
+        transition: all 0.6s ease-in-out;
+
+    }
 
 }
 
@@ -185,7 +193,6 @@ color: #E94B5C;
         background-size: cover;
         display: grid;
         height: 450px;
-        margin-top: 20px;
         height: 70vh;
         display: flex;
         justify-content: flex-end;
@@ -198,12 +205,16 @@ color: #E94B5C;
     
 .contact_section {
     display: grid;
-    width: 30%;
+    width: 25%;
     height: 412px;  
-    box-shadow: 0px 1px 1px 0px #00000040;
+    box-shadow: 0px 4px 4px 0px #00000040;
     padding: 20px;
+    padding-bottom: 40px;
+    padding-top: 40px;
     background-color: #fff;
     border-radius: 30px;
+    margin-top: 100px;
+    margin-right: 100px;
 }
  
 
