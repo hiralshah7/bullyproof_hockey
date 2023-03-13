@@ -2,7 +2,7 @@
 <!-- inserting logo to insert logo here we need to add the logo to the repo and then add the link to the logo here
 -->
 
-<img src="images/logo1.svg.svg" alt="Bully Proof Hokey Foundation Logo" width="100" height="200" style="display: block; margin-left: auto; margin-right: auto; width: 25%;"/>
+<img src="images/logo_final11.png" alt="Bully Proof Hokey Foundation Logo" width="100" height="200" style="display: block; margin-left: auto; margin-right: auto; width: 25%;"/>
 
 
 # Bully Proof Hokey Foundation
