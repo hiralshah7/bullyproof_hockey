@@ -5,7 +5,7 @@
 <img src="images/logo_final11.png" alt="Bully Proof Hokey Foundation Logo" width="100" height="200" style="display: block; margin-left: auto; margin-right: auto; width: 25%;"/>
 
 
-# Bully Proof Hokey Foundation
+# Bully Proof Hockey Foundation
 
 The Bully Proof Hokey Foundation is a non-profit organization dedicated to promoting positive behavior and ending bullying in the hockey community. Our mission is to create a culture of respect and inclusion in the sport, where everyone feels safe, respected, and included, regardless of their background or abilities.
 
