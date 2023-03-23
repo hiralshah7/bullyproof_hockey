@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- on refresh the page size reduces due to the navbar, add this -->
-    <meta http-equiv="refresh" content="1">
       <title>BullyProof Hockey</title>
     <!-- font -->
     <link href="https://fonts.cdnfonts.com/css/heavitas" rel="stylesheet">
@@ -142,70 +141,17 @@
               </div>
         </div>
     </section>
-    <!-- events section -->
-
-    <!-- this data can get updated dyanamically and will be coming out from database-->
-    <section id="events">
-        <h2 class="headingx">
-            <span class="events_actiontext">Events and Actions</span>
-        </h2>
-        <!-- start of the event-->
-        <section class="container_event">
-            <!-- start of event sections -->
-              <!-- register1-->
-                <div class="box1">
-                    <img src="images/register1.jpg" class="event_img" alt="reigster11">
-                    <h2 class="heading3">
-                        Bully Proof Hockey Camp
-                    </h2>
-                    <!-- date -->
-                    <div class="lower">
-                        <div class="left">
-                            <p class="date">March 27, 2023</p>
-                            <p class=date2>Join our charity hockey event
-                            by playing, celebrating, saying words of encouragement and being kind.</p>
-                        </div>
-                        <!-- button -->
-                        <div class="button_container2">
-                            <a href="" class="btn11">Register</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- register-2 -->
-                <div class="box1">
-                    <img src="images/register2.jpg" class="event_img" alt="register1">
-                    <h2 class="heading3">Bully Proof Hockey Fans</h2>
-                    <!-- date -->
-                    <div class="lower">
-                        <div class="left">
-                            <p class="date">March to December,2023</p>
-                            <p class=date2>Let’s cheer for officials and players! Be a fan and celebrate the wins and the fails
-                            of both teams.</p>
-                        </div>
-                    <!-- button -->
-                        <div class="button_container2">
-                            <a href="" class="btn11">Register</a>
-                        </div>
-                    </div>
-                </div>
-                    <!-- register-3 -->
-                    <div class="box1">
-                            <img src="images/register3.jpg" class="event_img" alt="img1">
-                                <h2 class="heading3">Bully Proof Tims Contest</h2>
-                                <!-- date -->
-                        <div class="lower">
-                            <div class="left">
-                                <p class="date">January to December, 2023</p>
-                                    <p class= "date2">Take a picture with a official or members of the other team and post on Instagram or twitter using the hashtag #bullyproofhockey</p>
-                            </div>
-                            <!-- button -->
-                            <div class="button_container2">
-                                <a href="" class="btn_learnmore1">Participate</a>
-                            </div>
-                        </div>  
-                    </div>
+        <main id="app">
+            <section id="events">
+                <h2 class="headingx">
+                        <span class="events_actiontext">Events and Actions</span>
+                </h2>
+                <section class="container_event">   
+                    <portfoliothumbnail v-for="portfolio in portfolioData" :portfolio="portfolio"></portfoliothumbnail>
+                </section>
             </section>
-</section>
+        </main>
+            <!-- end of event sections -->
 <section id="testimonials">
     <h2 class="headingx1">
         <p class="mobile-events-text">What Officals, Coaches and Players Say</p>
@@ -267,7 +213,7 @@
                 <div class="contact_img">
                     <!-- background_contact_us.jpg ---->
             </div>
-            <form action = "scripts/actionpage.php">
+            <form action = "scripts/actionpage.php" method="post"      >
                 <div class="contactField">
                     <input type="text" class="contact_field" id="name" name="name" placeholder="Name">
                     <input type="text" class="contact_field" id="email" name="email" placeholder="Email">
@@ -275,7 +221,7 @@
                     <textarea class="contact_field1" id="message" name="message" placeholder="Write Your Message"></textarea>  
                 <!-- button -->
                     <div class="button_container3">
-                    <a href="" class="btn_learnmore4">Send Message</a>
+                    <a href="" class="btn_learnmore4" type="submit">Send Message</a>
                     </div>
             </div>
             </form>

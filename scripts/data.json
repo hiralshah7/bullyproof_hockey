@@ -1,36 +1,29 @@
 {
     "Event1": {
-        "name": "Brand Building",
-        "technology_used": "Adobe Xd, HTML5, CSS, Js, Adobe Illustrator",
-        "Role": "Designer",
-        "Description": "The goal of this assignment is to create a comprehensive brand identity for a new product with the given group and the brand overall design and theme should be visually appealing to the user end side.",
-        "images": "brand_building.png",
+        "name": "Bully Proof Hockey Camp",
+        "date": "MARCH 27, 2023",
+        "Description": "Join our charity hockey event by playing, celebrating, saying words of encouragement and being kind.",
+        "images": "register1.jpg",
+        "link_name": "Register",
         "live_link": "https://brandbuild.hiralshahh.com/"
+
     },
 
     "Event2": {
-        "name": "Music Mixer",
-        "technology_used": "Adobe Xd, HTML5, CSS, Js, Photoshop",
-        "Role": "Designer",
-        "Description": "We were asked to make a game where you could take different sounds and put them together to make a song.The goal of this assignment was to create a interface in which user can mix two or more music and get a diffrent sound out of it, Using Java Script the audio mixer functions were created to execute the mix sound.",
-        "images": "music_mixer.png",
+        "name": "Bully Proof Hockey Fans",
+        "date": "MARCH TO DECEMBER,2023",
+        "Description": "Let’s cheer for officials and players! Be a fan and celebrate the wins and the fails of both teams.",
+        "images": "t2.png",
+        "link_name": "Register",
         "live_link": "https://music-mixer.hiralshahh.com/"
     },
     "Event3": {
-        "name": "Sports Intro",
-        "technology_used": "Cinema 4D, AfterEffects",
-        "Role": "Designer",
-        "Description": "We were asked to create a video intro that could be used for a sports network. All the modelling, texturing, and animation was done using Cinema 4d.",
-        "images": "sports_intro.png",
-        "live_link": "https://youtu.be/ZoVJDJF9w6k"
-    },
-
-    "Event4": {
-        "name": "Branding For Startup",
-        "technology_used": "HTML5, CSS, Js",
-        "Role": "Developer",
-        "Description": "In this project We were asked to Create Branding of a startup from scratch, So We were in team of four, In that I was doing overall Development of the site and rest of the branding like wireframe, infographic videos was done by our group members.",
-        "images": "startup_branding.png",
-        "live_link": "https://shortsolution.hiralshahh.com/index.html"
+        "name": "Bully Proof Tims Contest",
+        "date": "JANUARY TO DECEMBER, 2023",
+        "Description": "Take a picture with a official or members of the other team and post on Instagram or twitter using the hashtag #bullyproofhockey",
+        "images": "t3.png",
+        "link_name": "Participate",
+        "live_link": "https://music-mixer.hiralshahh.com/",
+        "button_class": "btn_learnmore1 "
     }
 }
