@@ -1,42 +1,34 @@
-<!-- contact form -->
-
-<!-- error reporting -->
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', '1');
+if($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Sanitize and validate name
+    $name = filter_var($_POST["name"], FILTER_SANITIZE_STRING);
+    if(empty($name)) {
+        die("Name is required");
+    }
 
+    // Sanitize and validate email address
+    $email = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
+    if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        die("Invalid email address");
+    }
 
-// contact page 
+    // Sanitize message
+    $message = filter_var($_POST["message"], FILTER_SANITIZE_STRING);
+    if(empty($message)) {
+        die("Message is required");
+    }
 
-// if the form has been submitted, send the email to admin
-if (isset($_POST['submit'])) {
-    // get the form data
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $subject = $_POST['subject'];
-    $message = $_POST['message'];
     
-    // check for errors
-    if (empty($name) || empty($email) || empty($subject) || empty($message)) {
-        $error = 'All fields are required.';
+    // Prepare email message
+    $to = "info@hiralshahh.com";
+    $subject = "New contact message from $name";
+    $body = "Name: $name\nEmail: $email\n\nMessage:\n$message";
+
+    // if mail is send show the message "Thank you for contacting us" on same page
+    if(mail($to, $subject, $body)) {
+        echo "Thank you for contacting us";
     } else {
-        // send the email
-        $to = 'bullyproofhockey@foundation.com'; 
-        $subject = 'Contact Form Submission';
-        $body = "Name: $name\n\nEmail: $email\n\nSubject: $subject\n\nMessage:\n$message";
-        $headers = "From: $email\r;
-
-
-";
-
-        // check if the email was sent
-        if (mail($to, $subject, $body, $headers)) {
-            $result = 'Thank you for contacting us. We will be in touch with you very soon.';
-        } else {
-            $error = 'Sorry, there was an error sending your message. Please try again later.';
-        }
+        echo "There was a problem sending the email.";
     }
 }
-
 ?>
-

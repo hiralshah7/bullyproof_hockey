@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BullyProof Hockey</title>
+    <!-- on refresh the page size reduces due to the navbar, add this -->
+      <title>BullyProof Hockey</title>
     <!-- font -->
     <link href="https://fonts.cdnfonts.com/css/heavitas" rel="stylesheet">
                 
     <!-- linking css -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css"   >
+    <!-- if the page size reduces on refresh due to the navbar, add this -->
+    <!-- if it still doesn't work, add this -->
+  
     <!-- favicon-->
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
@@ -73,7 +77,7 @@
             <div class="textMain">
                 <h2 class="heading1">BullyProof Hockey</h2>
                 <p class="pp">Some things are not part of the sport.<br>Parents and coaches are the first line in defense of respect for sports.</p>
-                <a href="#facts" class="btn_learnmore">Learn More</a>
+                <a href="" target="_blank" class="btn_learnmore">Learn More</a>
                 <div class="scroll-down">
                     <a href="#support" class="scroll-down-link">
                         <ion-icon name="chevron-down-outline"></ion-icon>
@@ -105,8 +109,8 @@
          </div>
         <div class="button_container">
         <!-- learn more button -->
-            <a href="" class="btn">Learn More</a>
-            <a href="" class="btn4">Download Guide</a>
+            <a href="https://drive.google.com/file/d/1t0kPYZY-Qe2F6A5BTIHT9kqTLJZZ1fCG/view?usp=share_link" target="_blank" class="btn">Learn More</a>
+            <a href="https://drive.google.com/file/d/1k81VquI4CGmHjcq5J2R_eE_adYnhhq79/view?usp=share_link" target="_blank" class="btn4">Download Guide</a>
         </div>
     </div>
 
@@ -132,75 +136,22 @@
             </div>
           
             <div class="button_container">
-                <a href="" class="btn">Help Phone</a>
-                <a href="" class="btn4">See Our Campaign</a>
+                <a href="tel:1-800-273-8255" class="btn">Help Phone</a>
+                <a href="https://drive.google.com/file/d/1rmniS20mLIVla8rBVQuu4Wq0_mB4RDz8/view?usp=share_link" target="_blank" class="btn4">See Our Campaign</a>
               </div>
         </div>
     </section>
-    <!-- events section -->
-
-    <!-- this data can get updated dyanamically and will be coming out from database-->
-    <section id="events">
-        <h2 class="headingx">
-            <span class="events_actiontext">Events and Actions</span>
-        </h2>
-        <!-- start of the event-->
-        <section class="container_event">
-            <!-- start of event sections -->
-              <!-- register1-->
-                <div class="box1">
-                    <img src="images/register1.jpg" class="event_img" alt="reigster11">
-                    <h2 class="heading3">
-                        Bully Proof Hockey Camp
-                    </h2>
-                    <!-- date -->
-                    <div class="lower">
-                        <div class="left">
-                            <p class="date">March 27, 2023</p>
-                            <p class=date2>Join our charity hockey event
-                            by playing, celebrating, saying words of encouragement and being kind.</p>
-                        </div>
-                        <!-- button -->
-                        <div class="button_container2">
-                            <a href="" class="btn11">Register</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- register-2 -->
-                <div class="box1">
-                    <img src="images/register2.jpg" class="event_img" alt="register1">
-                    <h2 class="heading3">Bully Proof Hockey Fans</h2>
-                    <!-- date -->
-                    <div class="lower">
-                        <div class="left">
-                            <p class="date">March to December,2023</p>
-                            <p class=date2>Let’s cheer for officials and players! Be a fan and celebrate the wins and the fails
-                            of both teams.</p>
-                        </div>
-                    <!-- button -->
-                        <div class="button_container2">
-                            <a href="" class="btn11">Register</a>
-                        </div>
-                    </div>
-                </div>
-                    <!-- register-3 -->
-                    <div class="box1">
-                            <img src="images/register3.jpg" class="event_img" alt="img1">
-                                <h2 class="heading3">Bully Proof Tims Contest</h2>
-                                <!-- date -->
-                        <div class="lower">
-                            <div class="left">
-                                <p class="date">January to December, 2023</p>
-                                    <p class= "date2">Take a picture with a official or members of the other team and post on Instagram or twitter using the hashtag #bullyproofhockey</p>
-                            </div>
-                            <!-- button -->
-                            <div class="button_container2">
-                                <a href="" class="btn_learnmore1">Participate</a>
-                            </div>
-                        </div>  
-                    </div>
+        <main id="app">
+            <section id="events">
+                <h2 class="headingx">
+                        <span class="events_actiontext">Events and Actions</span>
+                </h2>
+                <section class="container_event">   
+                    <eventthumbnail v-for="event in eventData" :event="event"></eventthumbnail>
+                </section>
             </section>
-</section>
+        </main>
+            <!-- end of event sections -->
 <section id="testimonials">
     <h2 class="headingx1">
         <p class="mobile-events-text">What Officals, Coaches and Players Say</p>
@@ -254,27 +205,39 @@
 
 <!-- contact section-->
 <section id="contact_sectionx">
+    
     <section class="contact_section">
-           <div class="contactus1">
-        <h2 class="contactus">Contact Us</h2>
+        <div class="contactus1">
+             <h2 class="contactus">Contact Us</h2>
             <h3 class="small_words2">We Want To Hear From You</h3>
             <div class="contactus2">
                 <div class="contact_img">
                     <!-- background_contact_us.jpg ---->
             </div>
-            <form action = "scripts/actionpage.php">
+            <form action = "scripts/actionpage.php" method="post"      >
                 <div class="contactField">
                     <input type="text" class="contact_field" id="name" name="name" placeholder="Name">
                     <input type="text" class="contact_field" id="email" name="email" placeholder="Email">
                     <!-- for message -->
                     <textarea class="contact_field1" id="message" name="message" placeholder="Write Your Message"></textarea>  
-                <!-- button -->
+                    <!-- button -->
                     <div class="button_container3">
-                    <a href="" class="btn_learnmore4">Send Message</a>
+                        <button type="submit" class="btn_learnmore4">Send Message</button>
                     </div>
-            </div>
+                         <!-- handling success and failures for mail page    -->
+                    <div id="success-message" class="alert success" style="display:none;">
+                        <span class="closebtn">&times;</span>
+                            <strong>Success!</strong> Your message has been sent successfully.
+                    </div>
+                    <div id="error-message" class="alert" style="display:none;">
+                        <span class="closebtn">&times;</span>
+                        <strong>Error!</strong> There was an error sending your message. Please try again later.
+                    </div>
+                </div>
             </form>
-             </div>
+        </div>
+
+           
         </div>
     </section>
 </section>
