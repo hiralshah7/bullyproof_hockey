@@ -5,7 +5,7 @@
 <img src="images/logo_final11.png" alt="Bully Proof Hokey Foundation Logo" width="70" height="200" style="display: block; margin-left: auto; margin-right: auto; width: 25%;"/>
 
 # Vist Our Website 
- <a href="www.bullyproof.hiralshahh.com" target = "_blank">Click Here</a>
+<a target="_blank" href="https://bullyproof.hiralshahh.com">Check the website</a>
 
 # Bully Proof Hockey Foundation
 
