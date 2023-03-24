@@ -18,16 +18,17 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         die("Message is required");
     }
 
+    
     // Prepare email message
     $to = "info@hiralshahh.com";
     $subject = "New contact message from $name";
     $body = "Name: $name\nEmail: $email\n\nMessage:\n$message";
 
-    // Send email
+    // if mail is send show the message "Thank you for contacting us" on same page
     if(mail($to, $subject, $body)) {
-        echo "Message sent successfully";
+        echo "Thank you for contacting us";
     } else {
-        echo "Failed to send message";
+        echo "There was a problem sending the email.";
     }
 }
 ?>

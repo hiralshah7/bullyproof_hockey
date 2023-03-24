@@ -5,12 +5,13 @@
     ini_set('display_errors', 1);
     error_reporting(E_ALL);
 
-    $user = "root";
+    $user = "u928855400_hiralshah7";
     //$pass = ""; // For WAMP
-    $pass = "root"; // For MAMP
+    $pass = "Database@1"; // For MAMP
     $url = "localhost";
     // Change the database name for each site
-    $db = "event";
+    $db = "u928855400_portfolio";
+
 
     // // Connect to db
     // $link = mysqli_connect($url, $user, $pass, $db, "8888"); //Mac
